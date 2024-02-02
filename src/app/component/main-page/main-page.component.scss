@@ -1,18 +1,59 @@
+p{
+    font-size:larger;
+}
+
+.main-block{
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+.presentation, .parcours{
+    margin-bottom: 5%;
+}
+
+.title-presentation, 
+.text-presentation, 
+.title-skills,
+.title-parcours,
+.text-parcours
+{
+    margin: 5%;
+}
+
+.text-presentation{
+    margin: 5% 25% 0 10%;
+}
+
+.title-parcours{
+    margin-left: 5%;
+}
+
 .presentation, .parcours, .skills, .contact{
     text-align: center;
 }
 
-
-
-.skills-title{
-    margin-top: 8%;
-    margin-right: -20%;
-}
-
-.skills{
+.block-presentation ,.block-parcours, .block-skills{
     display: flex;
-    justify-content: space-around;
-    margin-top: 5%;
-    margin-bottom: 5%;  
 }
 
+.block-parcours {
+    margin-left: 20%;
+}
+
+
+
+.tab-skills{
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.contact-block{
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 5%;
+    padding: 5%;
+    border-radius: 5px;
+    background-color: rgb(219, 217, 217);
+}

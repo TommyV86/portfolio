@@ -1,95 +1,187 @@
-<section class="presentation">
+<div class="main-block">
 
-    <h1>Présentation</h1>
+    <section class="presentation">
 
-    <p>
-        Where can I get some?
-        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, 
-        or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, 
-        you need to be sure there isn't anything embarrassing hidden in the middle of text. 
-        All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. 
-        It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, 
-        to generate Lorem Ipsum which looks reasonable. 
-        The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-    </p>
+        <div class="block-presentation">
+            <h2 class="title-presentation">Présentation (logo)</h2>
+            <p class="text-presentation">
+                Ayant commencé à travailler en 2006 dans la manutention jusqu'à 2020, je me suis tourné vers 
+                le développement web grâce à l'avis d'un ami. J'ai donc fait mes petites recherches sur le métier 
+                en découvrant les languages html et css dans des sites dédiés à la découverte du développement web
+                c'est donc à partir de là que j'ai décidé de me lancer dans ce domaine pour en faire mon métier.
+            </p>
+        </div>
+        
+    </section>
 
-</section>
 
-<section class="parcours">
 
-    <h1>Mon parcours</h1>
+    <section class="parcours">
 
-    <p>
-        Where can I get some?
-        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, 
-        or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, 
-        you need to be sure there isn't anything embarrassing hidden in the middle of text. 
-        All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. 
-        It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, 
-        to generate Lorem Ipsum which looks reasonable. 
-        The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-    </p>
-
-</section>
-
-<section class="skills">
-
-    <h1 class="skills-title">Mes compétences</h1>
-
-    <mat-tab-group animationDuration="1100ms" dynamicHeight>
-        <!-- images à placer dans chaque tab -->
-        <mat-tab label="Conception">
-            <div class="example-large-box mat-elevation-z4">
-                <img mat-card-image src="../../../assets/looping.png" class="loop-logo" alt="loop logo">
+        <div class="block-parcours">
+        
+            <div class="example-input-wrapper">
+                <input id="duration" value="0500" type="number" min="0" step="100" #duration hidden>
             </div>
-        </mat-tab>
+            
+            <mat-vertical-stepper [linear]="false" #stepper [animationDuration]="duration.value">
 
-        <mat-tab label="Front End">
-            <div class="example-large-box mat-elevation-z4">
-                <img mat-card-image src="../../../assets/angular.png" class="ng-logo" alt="ng logo">
-            </div>
-        </mat-tab>
+                <mat-step>
+                    <ng-template matStepLabel>Stage Concepteur Développeur Web - De septembre 2023 à novembre 2023
+                    </ng-template>
 
-        <mat-tab label="Back End">
-            <div class="example-large-box mat-elevation-z4">
-                <img mat-card-image src="../../../assets/java.png" class="ng-logo" alt="ng logo">
-            </div>
-        </mat-tab>
+                    <ng-template matStepContent>
 
-        <mat-tab label="Versionning">
-            <div class="example-large-box mat-elevation-z4">
-                <img mat-card-image src="../../../assets/gitlab.png" class="ng-logo" alt="ng logo">
-            </div>
-        </mat-tab>
+                        <p>Eurofad - Villeneuve-d'Ascq (59)</p>
+                        <p>-Mise en place d'un model conceptuel des données (Looping) pour la refonte du site</p>
+                        <p>-développement front : Angular, Node, Npm, Bootstrap, Html, Css</p>
+                        <p>-développement back : Symfony, Composer, Doctrine, Postman, Postgresql
+                        -outils de versionning : GitLab</p>
 
-    </mat-tab-group>
-      
-</section>
+                        <button mat-button matStepperNext>Expérience plus ancienne</button>
+
+                    </ng-template>
+
+                </mat-step>
+
+                <mat-step>
+                    <ng-template matStepLabel>Developpeur full stack sur des projets de formation - De mars 2023 à août 2023
+                    </ng-template>
+                    <ng-template matStepContent>
+                        <p>AFPA - Roubaix (59)</p>
+                        <p>Conception et développement de plusieurs petits projets en Java JEE,
+                            Angular/Spring/PostgreSQL/Hibernate en équipe sous méthode agile</p>
+                        <button mat-button matStepperPrevious>Expérience plus récente</button>
+                        <button mat-button matStepperNext>Expérience plus ancienne</button>
+                    </ng-template>
+                </mat-step>
+
+                <mat-step>
+                    <ng-template matStepLabel>Projet personnel Full Stack - D'octobre 2022 à novembre 2022
+                    </ng-template>
+
+                    <p>indépendant - Tourcoing (59)</p>
+                    <p>Création d'une application web de recettes de cuisine avec connexion d'user</p>
+                        <p>• Frontend : React Js, Axios, Formik, Yup</p>
+                        <p>• Backend : Node Js, Mongoose, Express, Mongo db</p>
+                    <button mat-button matStepperPrevious>Expérience plus récente</button>
+                    <button mat-button matStepperNext>Expérience plus ancienne</button>
+                </mat-step>
+
+                <mat-step>
+                    <ng-template matStepLabel>Software Development Engineer - Septembre 2022
+                    </ng-template>
+                    <p>Tales & Keys - Lille (59)</p>
+                    <p>-Conception de l'api sous environnement node avec mongodb, mongoose, express
+                        -Tests unitaire avec postman
+                    </p>
+                    <p>-Developpement front avec react js, axios, formik, yup</p>
+                    <button mat-button matStepperPrevious>Expérience plus récente</button>
+                    <button mat-button matStepperNext>Expérience plus ancienne</button>
+                </mat-step>
+
+                <mat-step>
+                    <ng-template matStepLabel>Stage Concepteur Développeur web - De juillet 2021 à septembre 2021
+                    </ng-template>
+                    <p>Insy2s - Lille</p>
+
+                    <p>-1er projet : mise en place de d'une application web dédiée à la recherche de films reliée à une API
+                        (react)
+                    </p>
+
+                    <p>-2ème projet en méthode agile(6 stagiaires + 1 scrum master) consistant à concevoir un forum avec
+                        une base de données (node js/express/mongoDb) sur 2mois et demi
+                    </p>
+                    <button mat-button matStepperPrevious>Expérience plus récente</button>
+                    <button mat-button matStepperNext>Expérience plus ancienne</button>
+                </mat-step>
+
+                <mat-step>
+                    <ng-template matStepLabel>Opérateur/Manutentionnaire/Conducteur de ligne - De janvier 2006 à janvier 2020
+                    </ng-template>
+                    <p>agences intérim - Saint Etienne(59) / Lille(42)</p>
+                    <p>-Diverses tâches en manutention, gestion d'une machine de production</p>
+                    <button mat-button matStepperPrevious>Expérience plus récente</button>
+                </mat-step>
+
+            </mat-vertical-stepper>
+
+            <h2 class="title-parcours">Mon parcours professionnel (logo)</h2>
+           
+        </div>
+
+    </section>
+
+
+
+    <section class="skills">
+
+        <div class="block-skills">
+
+            <h2 class="title-skills">Mes compétences (logo)</h2>
+
+            <mat-tab-group class="tab-skills" animationDuration="1100ms" dynamicHeight>
+                <!-- images à placer dans chaque tab -->
+                <mat-tab label="Conception">
+                    <div class="example-large-box mat-elevation-z4">
+                        <img mat-card-image src="../../../assets/looping.png" class="loop-logo" alt="loop logo">
+                    </div>
+                </mat-tab>
+
+                <mat-tab label="Front End">
+                    <div class="example-large-box mat-elevation-z4">
+                        <img mat-card-image src="../../../assets/angular.png" class="ng-logo" alt="ng logo">
+                    </div>
+                </mat-tab>
+
+                <mat-tab label="Back End">
+                    <div class="example-large-box mat-elevation-z4">
+                        <img mat-card-image src="../../../assets/java.png" class="ng-logo" alt="ng logo">
+                    </div>
+                </mat-tab>
+
+                <mat-tab label="Versionning">
+                    <div class="example-large-box mat-elevation-z4">
+                        <img mat-card-image src="../../../assets/gitlab.png" class="ng-logo" alt="ng logo">
+                    </div>
+                </mat-tab>
+
+            </mat-tab-group>
+        </div>
+        
+    </section>
+
+</div>
+
 
 <section class="contact">
-
-    <h1>Mon profil vous intéresse</h1>
-
-    <form>
     
-        <mat-form-field>
-            <mat-label>Votre email</mat-label>
-            <input matInput>
-        </mat-form-field><br>
-
-        <mat-form-field>
-            <mat-label>Objet du message</mat-label>
-            <input matInput>
-        </mat-form-field><br>
-            
-        <mat-form-field>
-            <mat-label>Votre message ...</mat-label>
-            <textarea matInput></textarea>
-        </mat-form-field><br>
+    <h1>Mon profil vous intéresse ? (logo)</h1>
+    
+    <div class="contact-block">
+    
+        <form>
         
-        <button mat-button>Soumettre</button>
+            <mat-form-field>
+                <mat-label>Votre email</mat-label>
+                <input matInput>
+            </mat-form-field><br>
 
-    </form>
+            <mat-form-field>
+                <mat-label>Objet du message</mat-label>
+                <input matInput>
+            </mat-form-field><br>
+                
+            <mat-form-field>
+                <mat-label>Votre message ...</mat-label>
+                <textarea matInput></textarea>
+            </mat-form-field><br>
+            
+            <button mat-button>Envoyer</button>
+
+        </form>
+
+    </div>
 
 </section>
 
