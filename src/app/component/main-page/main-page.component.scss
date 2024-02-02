@@ -1,5 +1,5 @@
-p{
-    font-size:larger;
+.text-presentation{
+    font-size: larger;
 }
 
 .main-block{
@@ -9,14 +9,15 @@ p{
 }
 
 .presentation, .parcours{
+    margin-top: 11.9%;
     margin-bottom: 5%;
+    margin-right: -8%;
 }
 
 .title-presentation, 
 .text-presentation, 
 .title-skills,
-.title-parcours,
-.text-parcours
+.title-parcours
 {
     margin: 5%;
 }
@@ -25,28 +26,54 @@ p{
     margin: 5% 25% 0 10%;
 }
 
-.title-parcours{
-    margin-left: 5%;
+.title-step{
+    text-decoration: underline;
 }
 
-.presentation, .parcours, .skills, .contact{
+.img-parcours{
+    margin-top: 4%;
+    margin-right: 5%;
+}
+
+.skills, .contact{
     text-align: center;
+}
+
+.skills{
+    margin: 10% 0 15% 0;
 }
 
 .block-presentation ,.block-parcours, .block-skills{
     display: flex;
 }
 
-.block-parcours {
-    margin-left: 20%;
+.block-presentation{
+    margin: 0 0 0 15%;
+}
+
+.logo{
+    margin: 10%;
+}
+
+.skills-logo{
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 
+
+.container-border{
+    border-radius: 10px;
+    border: 0.1px solid rgb(218, 218, 218);
+    padding-right: 6%;
+
+}
 
 .tab-skills{
     margin-left: 15%;
     margin-top: 5%;
     margin-bottom: 5%;
+    
 }
 
 .contact-block{
