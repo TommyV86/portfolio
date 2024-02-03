@@ -18,6 +18,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {MatStepperModule} from '@angular/material/stepper';
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import {MatStepperModule} from '@angular/material/stepper';
     MatSelectModule,
     MatInputModule,
     MatCardModule,
-    MatStepperModule
+    MatStepperModule,
+    MatDividerModule
 
   ],
   providers: [],
