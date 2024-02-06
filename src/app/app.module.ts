@@ -4,6 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { CommonModule } from "@angular/common";
+import { ReactiveFormsModule  } from "@angular/forms";
+
+import { HttpClientModule } from '@angular/common/http';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './component/footer/footer.component';
 import { MainPageComponent } from './component/main-page/main-page.component';
@@ -19,6 +24,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatSnackBarModule} from "@angular/material/snack-bar";
 
 @NgModule({
   declarations: [
@@ -41,7 +47,12 @@ import {MatDividerModule} from '@angular/material/divider';
     MatInputModule,
     MatCardModule,
     MatStepperModule,
-    MatDividerModule
+    MatDividerModule,
+    MatSnackBarModule,
+
+    CommonModule,
+    ReactiveFormsModule,
+    HttpClientModule
 
   ],
   providers: [],

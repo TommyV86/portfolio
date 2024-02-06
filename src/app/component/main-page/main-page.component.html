@@ -170,24 +170,24 @@
     
     <div class="contact-block">
     
-        <form>
-        
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                    
             <mat-form-field>
                 <mat-label>Votre email</mat-label>
-                <input matInput>
+                <input matInput formControlName="from_email" class="form-control" type="mail"  placeholder="Votre email ..." required>
             </mat-form-field><br>
 
             <mat-form-field>
                 <mat-label>Objet du message</mat-label>
-                <input matInput>
+                <input matInput formControlName="subject" class="form-control" type="text"  placeholder="Votre sujet ..." required>
             </mat-form-field><br>
                 
-            <mat-form-field>
+            <mat-form-field class="text">
                 <mat-label>Votre message ...</mat-label>
-                <textarea matInput></textarea>
+                <textarea matInput formControlName="text_content" class="form-control" type="text" placeholder="Votre message ..." required></textarea>
             </mat-form-field><br>
             
-            <button mat-button>Envoyer</button>
+            <button mat-button [disabled]="form.invalid" class="btn" type="submit">Envoyer</button>
 
         </form>
 
