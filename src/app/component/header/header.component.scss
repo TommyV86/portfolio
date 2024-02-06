@@ -1,0 +1,38 @@
+mat-toolbar{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+a{
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:link {
+    color: rgb(255, 255, 255);   
+}
+  
+a:visited {
+    color: pink;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: rgb(255, 187, 0);
+}
+
+.title-nav{
+    font-size: larger;
+}
+
+.block-nav{
+    margin-left: 45%;
+}
+
+.links-nav{
+    margin: 0 3%;
+}
