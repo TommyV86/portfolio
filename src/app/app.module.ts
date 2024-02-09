@@ -25,6 +25,9 @@ import {MatCardModule} from '@angular/material/card';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatSnackBarModule} from "@angular/material/snack-bar";
+import { MatMenuModule } from '@angular/material/menu';
+
+
 
 @NgModule({
   declarations: [
@@ -49,6 +52,7 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
     MatStepperModule,
     MatDividerModule,
     MatSnackBarModule,
+    MatMenuModule,
 
     CommonModule,
     ReactiveFormsModule,

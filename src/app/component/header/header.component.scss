@@ -1,8 +1,14 @@
-mat-toolbar{
+mat-toolbar, .menu-icon{
     position: fixed;
     top: 0;
     z-index: 1000;
 }
+
+mat-form-field{
+    visibility: hidden;
+}
+
+
 
 a{
     text-decoration: none;
@@ -35,4 +41,32 @@ a:active {
 
 .links-nav{
     margin: 0 3%;
+}
+
+.menu-icon{
+    visibility: hidden;
+}
+
+@media (max-width: 412px) {
+    mat-toolbar, .block-nav{
+        visibility: hidden;
+
+    }
+
+    .menu-icon{
+        visibility: visible;
+        z-index: 0;
+        margin-top: 4%;
+        margin-left: 82%;
+        border: 1px solid rgb(94, 94, 94);
+        border-radius: 30px;
+        width: 53px;
+        height: 50px;   
+        padding: 0.1px 0 0 3.5px;
+        transition-duration: 0.4s;
+        &:hover{
+            box-shadow: 1px 1px 10px 1px rgb(0, 0, 0);
+        }
+
+    }
 }
