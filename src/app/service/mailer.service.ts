@@ -7,13 +7,19 @@ import { Observable } from 'rxjs';
 })
 export class MailerService {
 
-  private host = 'https://localhost:8000/';
+  // private host = 'http://localhost:3000/';
+  private host = 'https://tommyweb.eu/public/';
   private urlMailer = 'email/send-mail';
 
   constructor(private httpClient : HttpClient) { }
 
   sendMail(mail: any) : Observable<any>{
-    return this.httpClient.post(this.host + this.urlMailer, mail);
+    const options = { 
+      headers: {'Content-Type': 'application/json'},
+      withCredentials: true 
+    };
+
+    return this.httpClient.post(this.host + this.urlMailer, mail, options);
   }
 
 }
