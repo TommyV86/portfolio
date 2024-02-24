@@ -150,8 +150,13 @@
         display: block;
     }
 
-    .block-parcours, .parcours-logo, .block-skills{
+    .block-parcours, .parcours-logo{
         margin-left: 0%;
+    }
+
+    .block-skills{
+        margin-left: -4%;
+
     }
 
     .contact-block{
